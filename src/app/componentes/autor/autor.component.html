@@ -1,0 +1,13 @@
+<app-nabvar></app-nabvar>
+<div class="container d-flex flex-row mt-5 justify-content-between">
+<div *ngFor="let item of autores" class="card" style="width: 18rem;">
+    <img src="{{item.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ item.nombre }}</h5>
+      <h5 class="card-title">{{ item.city }}</h5>
+      <p class="card-text">des: {{ item.descripcion }}</p>
+      <a [routerLink]="['/biografia']" class="btn btn-primary" >lets go</a>
+    </div>
+  </div>
+
+</div>
